@@ -26,7 +26,7 @@ jobs:
       run: chmod +x gradlew || true
 
     - name: Executar Testes Unitários e Robolectric
-      run: gradle :app:testDebugUnitTest --no-daemon
+      run: gradle :app:testDebugUnitTest --no-daemon --stacktrace
 
     - name: Compilar APK Debug
       run: gradle :app:assembleDebug --no-daemon
