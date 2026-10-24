@@ -28,6 +28,14 @@ jobs:
     - name: Executar Testes Unitários e Robolectric
       run: gradle :app:testDebugUnitTest --no-daemon --stacktrace
 
+    - name: Guardar relatório dos testes
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: nexora-relatorio-testes
+        path: app/build/reports/tests/testDebugUnitTest/
+        if-no-files-found: warn
+
     - name: Compilar APK Debug
       run: gradle :app:assembleDebug --no-daemon
 
