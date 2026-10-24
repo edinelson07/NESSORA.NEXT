@@ -1,0 +1,6 @@
+{
+  "name": "NEXORA",
+  "description": "NEXORA — Inteligência para Criadores: Estúdio de Roteiros, TV Aberta Oficial Brasileira, Marketplace para Criadores com Pix, Assistente IA e Integração YouTube",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
